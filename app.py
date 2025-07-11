@@ -11,9 +11,7 @@ app = FastAPI()
 
 
 @app.get("/")
-async def root(
-    _=Depends(get_api_key),
-):
+async def root():
     return {"message": "Hello World"}
 
 
